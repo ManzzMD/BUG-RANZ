@@ -2323,6 +2323,7 @@ m.reply(`SUCCES`)
                     m.reply(`BUG COLI DEK`)
                      }
                 break
+                
             default:
                 if (budy.startsWith('=>')) {
                     if (!isCreator) return m.reply(mess.owner)
