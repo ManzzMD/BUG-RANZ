@@ -1,2 +1,2 @@
 # TBC-HARD-BUG
-Private Tbc (Three Brother Crash)
+Private Tbc (Two Brother Crash)
