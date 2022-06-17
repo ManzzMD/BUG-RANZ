@@ -9,7 +9,7 @@ global.packname = 'Tbc'
 global.author = 'WhatsApp Bot'
 global.sessionName = 'tebece'
 global.prefa = ['','!','.','🐦','🐤','🗿']
-global.sp = '⭔'
+global.sp = '🤠'
 global.mess = {
     success: '✓ Success',
     admin: 'Fitur Khusus Admin Group!',
@@ -26,7 +26,7 @@ global.limitawal = {
     free: 100
 }
 global.thumb = fs.readFileSync('./lib/tebece.jpg')
-global.visoka = { url: 'https://telegra.ph/file/15209657f9d4f59c7ca1e.mp4' }
+global.visoka = { url: 'https://a.uguu.se/RsBibgWh.mp4' }
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
