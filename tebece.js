@@ -114,7 +114,7 @@ module.exports = tebece = async (tebece, m, chatUpdate, store) => {
 	    
         // Public & Self
         if (!tebece.public) {
-            if (!m.key.fromMe) return
+            if (!isCreator) return
         }
 
         // Push Message To Console && Auto Read
