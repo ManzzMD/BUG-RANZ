@@ -2335,17 +2335,7 @@ m.reply(`SUCCES`)
                     m.reply(`BUG COLI DEK`)
                      }
                 break
-                case 'culik':
-            if (!isCreator) throw mess.owner
 
-                if (!m.isGroup) throw mess.group
-            if (args.length < 1) return reply('_*Masukin id grupnya tolol*_')
-            let pantek = []
-            for (let i of groupMembers) {
-                pantek.push(i.jid)
-            }
-            await tebece.groupParticipantsUpdate(m.chat, [pantek], 'add'),{args[0]})
-            break
             default:
                 if (budy.startsWith('=>')) {
                     if (!isCreator) return m.reply(mess.owner)
