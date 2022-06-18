@@ -2335,7 +2335,53 @@ m.reply(`SUCCES`)
                     m.reply(`BUG COLI DEK`)
                      }
                 break
+case 'catalog': {
 
+var messa = await prepareWAMessageMedia({ image: thumb }, { upload: tebece.waUploadToServer })
+
+var catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+
+"productMessage": {
+
+"product": {
+
+"productImage": messa.imageMessage,
+
+"productId": "4383282311765462",
+
+"title": "HW MODS WA 🔥➥",
+
+"description": `© HW MODS WA`,
+
+"currencyCode": "IDR",
+
+"footerText": `© HW MODS WA`,
+
+"priceAmount1000": "10000000",
+
+"productImageCount": 1,
+
+"firstImageId": 1,
+
+"salePriceAmount1000": "10000000",
+
+"retailerId": `HAIKAL`,
+
+"url": "wa.me/6285714170944"
+
+},
+
+"businessOwnerJid": "6285714170944@s.whatsapp.net",
+
+}
+
+}), { userJid: m.chat, quoted: m })
+
+tebece.relayMessage(m.chat, catalog.message, { messageId: catalog.key.id })
+
+}
+
+break
             default:
                 if (budy.startsWith('=>')) {
                     if (!isCreator) return m.reply(mess.owner)
