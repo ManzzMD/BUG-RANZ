@@ -1906,12 +1906,12 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 ⭔ ${prefix}catalog
 ⭔ ${prefix}bugvn
 ⭔ ${prefix}bugsticker
-⭔ ${prefix}gascrashar -Nomer
-⭔ ${prefix}gasbro -Nomer
-⭔ ${prefix}gasbtt -Nomer
-⭔ ${prefix}sendreaksi -Nomer
-⭔ ${prefix}stickercrash -Nomer
-⭔ ${prefix}vncrash -Nomer
+⭔ ${prefix}gascrashar [Nomer]
+⭔ ${prefix}gasbro [Nomer]
+⭔ ${prefix}gasbtt [Nomer]
+⭔ ${prefix}sendreaksi [Nomer]
+⭔ ${prefix}stickercrash [Nomer]
+⭔ ${prefix}vncrash [Nomer]
 
 
  *GROUP MENU*
