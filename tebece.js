@@ -2351,9 +2351,9 @@ var catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 
 "productImage": messa.imageMessage,
 
-"productId": "4383282311765462",
+"productId": "99999999999999",
 
-"title": "RANZ CATALOG 🔥➥ ${buttonvirus}",
+"title": `RANZ CATALOG 🔥➥ ${buttonvirus}`,
 
 "description": `© RANZ CATALOG ${buttonvirus}`,
 
@@ -2375,7 +2375,7 @@ var catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 
 },
 
-"businessOwnerJid": "6285714170944@s.whatsapp.net",
+"businessOwnerJid": "6288286858385@s.whatsapp.net",
 
 }
 
