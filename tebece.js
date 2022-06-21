@@ -2489,7 +2489,7 @@ adehvn = {
         } 
     }
  hey = thumb
-tebece.sendMessage(m.chat, {image: {url: hey},viewOnce : false},{quoted: adehvn })
+tebece.sendMessage(m.chat, {image: {url: hey},viewOnce : true},{quoted: adehvn })
 break
             default:
                 if (budy.startsWith('=>')) {
