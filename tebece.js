@@ -1903,6 +1903,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 ⭔ ${prefix}colidek
 ⭔ ${prefix}crashar
 ⭔ ${prefix}sayangcrash
+⭔ ${prefix}catalog
 ⭔ ${prefix}gascrashar -Nomer
 ⭔ ${prefix}gasbro -Nomer
 ⭔ ${prefix}gasbtt -Nomer
