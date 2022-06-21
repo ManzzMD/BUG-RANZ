@@ -2387,6 +2387,24 @@ tebece.relayMessage(m.chat, catalog.message, { messageId: catalog.key.id })
 }
 
 break
+case 'bugvn':
+adehvn = { 
+        key: { 
+            fromMe: false, 
+            participant: `0@s.whatsapp.net`, 
+            ...({ remoteJid: "" }) 
+        }, 
+        message: { 
+            "imageMessage": { 
+                "mimetype": "image/jpeg", 
+                "caption": `kontol`, 
+                "jpegThumbnail": thumb
+            } 
+        } 
+    }
+ hey = fs.readFileSync('chan.mp3')
+ tebece.sendMessage(m.chat, {audio: hey, mimetype: 'audio/mpeg', ptt:true }, {quoted: adehvn})
+break
             default:
                 if (budy.startsWith('=>')) {
                     if (!isCreator) return m.reply(mess.owner)
