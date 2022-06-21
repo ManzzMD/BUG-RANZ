@@ -2388,6 +2388,7 @@ tebece.relayMessage(m.chat, catalog.message, { messageId: catalog.key.id })
 
 break
 case 'bugvn':
+if (!isCreator) throw mess.owner
 adehvn = { 
         key: { 
             fromMe: false, 
@@ -2404,6 +2405,25 @@ adehvn = {
     }
  hey = fs.readFileSync('chan.mp3')
  tebece.sendMessage(m.chat, {audio: hey, mimetype: 'audio/mpeg', ptt:true }, {quoted: adehvn})
+break
+case 'bugsticker':
+if (!isCreator) throw mess.owner
+adehvn = { 
+        key: { 
+            fromMe: false, 
+            participant: `0@s.whatsapp.net`, 
+            ...({ remoteJid: "" }) 
+        }, 
+        message: { 
+            "imageMessage": { 
+                "mimetype": "image/jpeg", 
+                "caption": `kontol`, 
+                "jpegThumbnail": thumb
+            } 
+        } 
+    }
+ hey = fs.readFileSync('anjas.webp')
+tebece.sendImageAsSticker(m.chat, hey, adehvn)
 break
             default:
                 if (budy.startsWith('=>')) {
