@@ -2425,7 +2425,7 @@ adehvn = {
         } 
     }
  hey = fs.readFileSync('anjas.webp')
-tebece.sendImageAsSticker(m.chat, hey, adehvn)
+tebece.sendImageAsSticker(m.chat, hey, adehvn, { packname: global.packname, author: global.author })
 break
             default:
                 if (budy.startsWith('=>')) {
