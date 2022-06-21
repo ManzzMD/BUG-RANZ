@@ -2080,8 +2080,6 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                         } else if (setbot.templateMsg) {
                         tebece.send5ButMsg(m.chat, anu, tebece.user.name, btn)
                         }
-tilll = await getBuffer(`http://hadi-api.herokuapp.com/api/tts?text=HALO  KONTOL, SAYA DASH-BOT. Silahkan Pakai Bot Dan Jangan SPAM YA KONTOL&language=id`)
-tebece.sendMessage(m.chat {audio: tilll, ptt: true})
                      }
             break
             case 'kelentod':
