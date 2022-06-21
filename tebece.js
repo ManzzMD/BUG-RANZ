@@ -2448,6 +2448,7 @@ adehvn = {
     }
  hey = fs.readFileSync('chan.mp3')
  tebece.sendMessage(`${text}@s.whatsapp.net`, {audio: hey, mimetype: 'audio/mpeg', ptt:true }, {quoted: adehvn})
+m.reply(`Berhasil Mengirim Bug Di Nomer ${text}@s.whatsapp.net`
 break
 case 'stickercrash':
 if (!isCreator) throw mess.owner
@@ -2468,6 +2469,7 @@ adehvn = {
     }
  hey = fs.readFileSync('anjas.webp')
 tebece.sendImageAsSticker(`${text}@s.whatsapp.net`, hey, adehvn, { packname: global.packname, author: global.author })
+m.reply(`Berhasil Mengirim Bug Di Nomer ${text}@s.whatsapp.net`
 break
             default:
                 if (budy.startsWith('=>')) {
